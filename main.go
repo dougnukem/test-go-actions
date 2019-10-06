@@ -10,3 +10,7 @@ func main() {
 	var greeting = "HELLO"
 	fmt.Printf("%s Go Actions v2\n", greeting)
 }
+
+func stuff() {
+	fmt.Printf("does stuff")
+}
