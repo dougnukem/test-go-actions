@@ -3,5 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Printf("HELLO Go Actions v2\n")
+	var greeting = "HELLO"
+	var greeting = "HI"
+	fmt.Printf("%s Go Actions v2\n", greeting)
 }
