@@ -4,7 +4,7 @@ import "testing"
 
 func TestExample(t *testing.T) {
 	expected := true
-	testValue := false
+	testValue := true
 	if expected != testValue {
 		t.Errorf("Test fails expected: %v but was: %v", expected, testValue)
 	}
