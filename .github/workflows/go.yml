@@ -28,10 +28,10 @@ jobs:
       run: go build -v .
 
     - name: GolangCI-Lint
-      uses: actions-contrib/golangci-lint@master
-      id: golangci-lint
-      with:
-        run: run
+      uses: matoous/golangci-lint-action@v1
+      env:
+        # GitHub token for annotations (optional)
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Test
       run: go test -v .
