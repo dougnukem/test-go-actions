@@ -40,10 +40,5 @@ jobs:
       - name: Run GolangCI-Lint
         uses: docker://matousdz/golangci-lint-action:v1.0.0
         env:
+          # GitHub token for annotations (optional)
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Run GolangCI-Lint
-      uses: docker://matousdz/golangci-lint-action:v1.0.0
-      env:
-        # GitHub token for annotations (optional)
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
