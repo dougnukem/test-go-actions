@@ -16,7 +16,8 @@ jobs:
     - name: Set up GolangCI-Lint
       uses: actions-contrib/golangci-lint@master
       id: golangci-lint
-      args: run
+      run: |
+        echo "RUN GOLANG CI LINT"
 
     - name: Check out code into the Go module directory
       uses: actions/checkout@v1
