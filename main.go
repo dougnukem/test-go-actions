@@ -8,7 +8,6 @@ type Stuff struct {
 
 func main() {
 	var greeting = "HELLO"
-	var a string
 	fmt.Printf("%s Go Actions v2\n", greeting)
 }
 
