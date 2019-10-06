@@ -84,3 +84,31 @@ jobs:
           golangci_lint_flags: "--disable-all -E misspell "
           tool_name: misspell
           level: info
+
+  deadcode:
+    name: runner / deadcode
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code into the Go module directory
+        uses: actions/checkout@v1
+      - name: deadcode
+        uses: docker://reviewdog/action-golangci-lint:v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          golangci_lint_flags: "--disable-all -E deadcode "
+          tool_name: deadcode
+          level: info
+
+  unused:
+    name: runner / unused
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code into the Go module directory
+        uses: actions/checkout@v1
+      - name: unused
+        uses: docker://reviewdog/action-golangci-lint:v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          golangci_lint_flags: "--disable-all -E unused "
+          tool_name: unused
+          level: info
