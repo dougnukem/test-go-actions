@@ -54,7 +54,6 @@ linters:
     - bodyclose
     - deadcode
     - depguard
-    - dogsled
     - dupl
     - errcheck
     - funlen
@@ -100,4 +99,3 @@ run:
 # https://github.com/golangci/golangci/wiki/Configuration
 service:
   golangci-lint-version: 1.19.x # use the fixed version to not introduce new linters unexpectedly
-  

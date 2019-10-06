@@ -11,6 +11,6 @@ func main() {
 	fmt.Printf("%s Go Actions v2\n", greeting)
 }
 
-func stuff() {
+func doThings() {
 	fmt.Printf("does stuff")
 }
