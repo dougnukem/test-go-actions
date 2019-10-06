@@ -3,7 +3,6 @@ package main_test
 import "testing"
 
 func TestExample(t *testing.T) {
-	var a string
 	expected := true
 	testValue := false
 	if expected != testValue {

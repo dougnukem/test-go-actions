@@ -13,10 +13,6 @@ jobs:
         go-version: 1.13
       id: go
 
-    - name: Set up GolangCI-Lint
-      uses: actions-contrib/golangci-lint@master
-      id: golangci-lint
-
     - name: Check out code into the Go module directory
       uses: actions/checkout@v1
 
@@ -34,5 +30,8 @@ jobs:
     - name: Test
       run: go test -v .
 
-    - name: Lint
-      run: go test -v .
+    - name: GolangCI-Lint
+      uses: actions-contrib/golangci-lint@master
+      id: golangci-lint
+      with:
+        run: run
