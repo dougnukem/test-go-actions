@@ -27,11 +27,11 @@ jobs:
     - name: Build
       run: go build -v .
 
-    - name: Test
-      run: go test -v .
-
     - name: GolangCI-Lint
       uses: actions-contrib/golangci-lint@master
       id: golangci-lint
       with:
         run: run
+
+    - name: Test
+      run: go test -v .
