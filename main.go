@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+type Stuff struct {
+	Thing string
+}
+
 func main() {
 	var greeting = "HELLO"
 	var b = "stuffs"
